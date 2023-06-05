@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CL TA3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/all.min.css')}}"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/tailwind.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/tooplate-antique-cafe.css')}}">
+
+<!--
+
+Tooplate 2126 Antique Cafe
+
+https://www.tooplate.com/view/2126-antique-cafe
+
+-->
+</head>
+<body>
+    <!-- Intro -->
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="{{ url_for ('static', filename='img/istockphoto_1.jpg')}}">
+    <table>
+      <tr>
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
+                    <h1 class="text-white text-5xl tm-logo-font mb-5">Consumer Complaint Classification</h1>
+                    <p class="tm-text-gold tm-text-2xl">.</p>
+                </div>
+                <div class="bg-white bg-opacity-70 p-10 mb-5">
+                    <p class="text-black leading-8 text-sm font-light">
+                      {% if check %}
+                         {{ text }}
+                      {% endif %}
+                    </p>
+                </div>
+              </div>
+            </div>
+      </tr>
+      <tr>
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+              <div class="bg-white bg-opacity-70 p-10 mb-5">
+                  <p class="text-black leading-8 text-sm font-light">
+                    <ol>
+                      <li>13 Chetan Sanjay Jadhav </li>
+                      <li>14 Vinayak Rajendra Marathe </li>
+                      <li>15 Vishal Ravindra Patil </li>
+                      <li>16 Bharat Premsing Rajput </li>
+                      <li>17 Jayesh Sanjay Patel </li>
+                      <li>18 Sachine Vinayak Dabhade </li>
+                    </ol>
+                  </p>
+              </div>
+              </div>
+          </div>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
